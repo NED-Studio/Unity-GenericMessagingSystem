@@ -1,7 +1,6 @@
-# Generic Event Syste 
+# Generic Messaging System
 ------
-**Generic Event System** adalah Event System yang menggunakan **generic class** untuk penyimpanannya, 
-yang pada umumnya memanfaatkan collecntio seperti list atau array yang selanjutnya akan di-loop.
+**Generic Messaging System** adalah messaging system for Unity game engine which implementing Generic class to store instance of handler.
 
 ## How to use
 1. Download *.unitypackage release from [Release Page](../../releases)
