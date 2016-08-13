@@ -10,9 +10,9 @@ yang pada umumnya memanfaatkan collecntio seperti list atau array yang selanjutn
 4. Overite abstract method **BaseMessagingManager.CreateAllStorage()** and **BaseMessagingManager.DestroyAllStorage()** using method :
 
 ```
-	BaseMessagingManager.CreateStorage<D, I>() where D : IMessageDomain where I : IMessageListener
+		BaseMessagingManager.CreateStorage<D, I>() where D : IMessageDomain where I : IMessageListener
 	
-	BaseMessagingManager.DestroyStorage<D, I>() where D : IMessageDomain where I : IMessageListener
+		BaseMessagingManager.DestroyStorage<D, I>() where D : IMessageDomain where I : IMessageListener
 ```
 
 5. Create Interface which extending IMessageListener
@@ -20,9 +20,9 @@ yang pada umumnya memanfaatkan collecntio seperti list atau array yang selanjutn
 7. Create new class which extend IMessageListener and Add or Remove its instrance using :
 
 ```
-	BaseMessagingManager.Add<D, I>(I handler) where D : IMessageDomain where I : IMessageListener
+		BaseMessagingManager.Add<D, I>(I handler) where D : IMessageDomain where I : IMessageListener
 	
-	BaseMessagingManager.Remove<D, I>(I handler) where D : IMessageDomain where I : IMessageListener
+		BaseMessagingManager.Remove<D, I>(I handler) where D : IMessageDomain where I : IMessageListener
 ```
 
 Please look at Sample for more detail 
