@@ -27,8 +27,8 @@
 Please look at Sample for more detail 
 
 ## Contribution
-Please read [CONTRIBUTION.md](./CONTRIBUTION.md) file for deatail about contribution.
+Please read [CONTRIBUTION.md](./CONTRIBUTION.md) file for detail about contribution.
 
 ## Licenses
-Please read [LICENSE](./LICENSE) file for deatail about lincese.
+Please read [LICENSE](./LICENSE) file for detail about lincese.
 
