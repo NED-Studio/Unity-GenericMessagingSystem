@@ -5,8 +5,8 @@
 ## How to use
 1. Download *.unitypackage from [Release Page](../../releases)
 2. Import to your unity project
-3. Create new class which extending BaseMessagingManager class
-4. Overite abstract method **BaseMessagingManager.CreateAllStorage()** and **BaseMessagingManager.DestroyAllStorage()**  and using method bellow to create/destroy storage :
+3. Create new class which extending `BaseMessagingManager` class
+4. Overite abstract method `BaseMessagingManager.CreateAllStorage()` and `BaseMessagingManager.DestroyAllStorage()`  and using method bellow to create/destroy storage :
 	```
 	class : BaseMessagingManager
 	
@@ -15,9 +15,9 @@
 	public void DestroyStorage<D, I>() where D : IMessageDomain where I : IMessageListener
 	```
 
-5. Create interface which extending IMessageListener
-6. Create interface which extending IMessageDomain to create new domain or use GlobalDomain
-7. Create new class which extend IMessageListener as handler class
+5. Create interface which extending `IMessageListener`
+6. Create interface which extending `IMessageDomain` to create new domain or use ` GlobalDomain`
+7. Create new class which extend `IMessageListener` as handler class
 8. Add/Remove instance of handler using:
 	```
 	class : BaseMessagingManager
@@ -46,4 +46,3 @@ Please read [LICENSE](./LICENSE) file for detail about lincese.
 ## Language
 * [README(ENGLISH)](./README.md)
 * [README(BAHASA)](./README-ID.md)
-
