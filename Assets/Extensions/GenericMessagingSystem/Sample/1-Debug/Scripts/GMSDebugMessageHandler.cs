@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace NED.GenericMessaingSystem.Sample
+namespace NED.GenericMessagingSystem.Sample
 {
     public class GMSDebugMessageHandler : MonoBehaviour, GMSIDebugMessage
     {

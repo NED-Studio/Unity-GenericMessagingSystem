@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace NED.GenericMessaingSystem.Sample
+namespace NED.GenericMessagingSystem.Sample
 {
     [RequireComponent(typeof(Text))]
     public class GMSTickText : MonoBehaviour, GMSITickListener

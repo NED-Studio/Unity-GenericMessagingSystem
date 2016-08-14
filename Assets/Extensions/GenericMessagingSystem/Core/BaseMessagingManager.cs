@@ -8,7 +8,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace NED.GenericMessaingSystem
+namespace NED.GenericMessagingSystem
 {
     /// <summary>
     /// Base class for All Messaging Manager
@@ -25,11 +25,8 @@ namespace NED.GenericMessaingSystem
         /// Called automaticly by Internal Unity
         /// Call <see cref="CreateAllStorage()"/> in implementation
         /// </summary>
-        protected virtual void Awake()
+        public BaseMessagingManager()
         {
-#if UNITY_EDITOR
-            if (EnableDebug) Debug.Log("Awake");
-#endif
             CreateAllStorage();
         }
 
@@ -96,7 +93,10 @@ namespace NED.GenericMessaingSystem
 
             Assert.IsNotNull<List<I>>(HandlerStorage<D, I>.Handlers, "Handler storage not created yet!");
 
-            HandlerStorage<D, I>.Handlers.Add(handler);
+            if (HandlerStorage<D, I>.Handlers != null)
+            {
+                HandlerStorage<D, I>.Handlers.Add(handler);
+            }
         }
 
         /// <summary>

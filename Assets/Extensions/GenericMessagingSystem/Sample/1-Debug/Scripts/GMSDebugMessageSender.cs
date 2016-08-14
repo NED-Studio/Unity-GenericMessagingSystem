@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using UnityEngine;
 
-namespace NED.GenericMessaingSystem.Sample
+namespace NED.GenericMessagingSystem.Sample
 {
     public class GMSDebugMessageSender : MonoBehaviour
     {
