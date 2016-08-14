@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace NED.GenericMessaingSystem
+namespace NED.GenericMessagingSystem
 {
     /// <summary>
     /// Class to message handler object
@@ -14,6 +14,14 @@ namespace NED.GenericMessaingSystem
     internal static class HandlerStorage<D, I> where D : IMessageDomain where I : IMessageListener
     {
         private static List<I> m_Handlers;
+
+        /// <summary>
+        /// Get ready status of Handler
+        /// </summary>
+        public static bool IsReady
+        {
+            get { return (m_Handlers != null); }
+        }
 
         /// <summary>
         /// Get all handler collections
